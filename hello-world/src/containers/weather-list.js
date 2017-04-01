@@ -61,12 +61,14 @@ class WeatherList extends Component {
       return (
         <table className="table table-hover weather-info-list">
         <thead>
+        <tr>
         <th>City</th>
         <th>Country</th>
         <th>Temperature</th>
         <th>Temperature Range</th>
         <th>Humidity</th>
         <th>Conditions</th>
+        </tr>
 
         {/*}<th>Country</th>
         <th>Temperature</th>
