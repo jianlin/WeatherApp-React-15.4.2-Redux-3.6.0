@@ -12,3 +12,9 @@
 
     npm install --save react-redux
     npm install --save-dev redux-devtools
+
+
+    npm install --save redux-promise
+    npm install --save bootstrap
+    npm install --save axios
+    npm install --save country-data
