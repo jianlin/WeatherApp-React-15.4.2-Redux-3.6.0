@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { fetchWeather } from "../actions/index";
 
-
 class SearchBar extends Component {
 
   constructor(props) {
@@ -38,9 +37,7 @@ class SearchBar extends Component {
         </span>
       </form>
     );
-
   }
-
 }
 
 function mapDispatchToProps(dispatch) {

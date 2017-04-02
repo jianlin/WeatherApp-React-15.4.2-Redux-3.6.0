@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import CountryData from 'country-data'
@@ -22,9 +21,9 @@ class WeatherList extends Component {
           <td>{ weather.main.humidity } %</td>
           <td>{ weather.weather[0].description }</td>
         </tr>
-      )
+      );
 
-    })
+    });
   }
 
   render() {
@@ -54,10 +53,8 @@ class WeatherList extends Component {
         </table>
       );
     }
-
   }
 }
-
 
 function mapStateToProps(state) {    // HOW TO CONNECT APP STATE TO CONTAINER: map the app level state to props
   return {
