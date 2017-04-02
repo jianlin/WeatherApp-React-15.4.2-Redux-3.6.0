@@ -11,14 +11,14 @@ class WeatherList extends Component {
       return Math.round(10 * (k - 273.15)) / 10;
     }
 
-    return this.props.weatherList.map((weather) => {
+    return this.props.weatherList.map((weather, i) => {
 
       return (
-        <tr key={weather.name + "," + weather.sys.country}>
+        <tr key={i}>
           <td>{ weather.name }</td>
           <td>{ CountryData.countries[weather.sys.country].name }</td>
           <td>{ convertKToC(weather.main.temp) } °C</td>
-          <td> {convertKToC(weather.main.temp_min)} - {convertKToC(weather.main.temp_max)} °C</td>
+          <td>{ convertKToC(weather.main.temp_min) } - { convertKToC(weather.main.temp_max) } °C</td>
           <td>{ weather.main.humidity } %</td>
           <td>{ weather.weather[0].description }</td>
         </tr>
