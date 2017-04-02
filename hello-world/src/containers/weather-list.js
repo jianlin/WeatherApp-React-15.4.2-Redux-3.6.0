@@ -13,13 +13,14 @@ class WeatherList extends Component {
     return this.props.weatherList.map((weather, i) => {
 
       return (
-        <tr key={i}>
+        <tr key={`${i} ${weather.name} ${weather.sys.country}`}>
           <td>{ weather.name }</td>
           <td>{ CountryData.countries[weather.sys.country].name }</td>
           <td>{ convertKToC(weather.main.temp) } °C</td>
           <td>{ convertKToC(weather.main.temp_min) } - { convertKToC(weather.main.temp_max) } °C</td>
           <td>{ weather.main.humidity } %</td>
           <td>{ weather.weather[0].description }</td>
+          <td><img className="weather-condition-icon" src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`} alt={ weather.weather[0].description } /></td>
         </tr>
       );
 
@@ -43,6 +44,7 @@ class WeatherList extends Component {
               <th>Temperature Range</th>
               <th>Humidity</th>
               <th>Conditions</th>
+              <th></th>
             </tr>
           </thead>
 

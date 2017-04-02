@@ -18,3 +18,7 @@
     npm install --save bootstrap
     npm install --save axios
     npm install --save country-data
+
+### to build it as a sample
+
+    npm run build
