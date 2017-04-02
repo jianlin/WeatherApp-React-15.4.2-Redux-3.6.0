@@ -2,6 +2,7 @@
   "name": "hello-world",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://skiesof.blue/react/weather/",
   "dependencies": {
     "axios": "^0.16.0",
     "bootstrap": "^3.3.7",
