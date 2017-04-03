@@ -6,6 +6,8 @@ class WeatherList extends Component {
 
   weatherDetails() {
 
+    var countTotalItems = this.props.weatherList.length;
+
     function convertKToC(k) {
       return Math.round(10 * (k - 273.15)) / 10;
     }
@@ -13,7 +15,7 @@ class WeatherList extends Component {
     return this.props.weatherList.map((weather, i) => {
 
       return (
-        <tr key={`${i} ${weather.name} ${weather.sys.country}`}>
+        <tr key={`${countTotalItems - i} ${weather.name} ${weather.sys.country}`}>
           <td>{ weather.name }</td>
           <td>{ CountryData.countries[weather.sys.country].name }</td>
           <td>{ convertKToC(weather.main.temp) } °C</td>
