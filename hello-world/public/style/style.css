@@ -8,5 +8,5 @@
 footer { margin-top: 100px; opacity: 0.3; }
 footer:hover { opacity: 0.8; }
 footer .react-icon { height: 25px; }
-footer .redux-icon { height: 21px; }
+footer .redux-icon { height: 21px; margin-left: 1px; }
 footer .footer-message { margin-left: 0.5em; }
