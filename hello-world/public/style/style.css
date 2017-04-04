@@ -1,6 +1,12 @@
 
-#root { max-width: 1000px; }
+#root, footer { max-width: 1000px; }
 .input-group { margin: 20px 0 40px; }
 .weather-info-list svg { height: 180px; }
 .weather-info-list.table td, .weather-info-list.table th { text-align: center; vertical-align: middle; }
 .weather-info-list.table td .weather-condition-icon { width: 50px; height: 50px; }
+
+footer { margin-top: 100px; opacity: 0.3; }
+footer:hover { opacity: 0.8; }
+footer .react-icon { height: 25px; }
+footer .redux-icon { height: 21px; }
+footer .footer-message { margin-left: 0.5em; }
